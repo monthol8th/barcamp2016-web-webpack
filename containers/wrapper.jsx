@@ -1,4 +1,8 @@
-import Section from './section.jsx';
+import Index from './sections/index.jsx';
+import Location from './sections/location.jsx';
+import Register from './sections/register.jsx';
+import Schedule from './sections/schedule.jsx';
+import Sponsors from './sections/sponsors.jsx';
 import Menu from './menu.jsx';
 import '../js/anchor.js';
 export default class Wrapper extends React.Component {
@@ -7,11 +11,11 @@ export default class Wrapper extends React.Component {
 			<div>
 				<Menu />
 				<div>
-					<Section sectionId="index-section" color="#ecf0f1" text="Index"/>
-					<Section sectionId="register-section" color="#bdc3c7" text="Register"/>
-					<Section sectionId="schedule-section" color="#ecf0f1" text="Schedule"/>
-					<Section sectionId="location-section" color="#bdc3c7" text="Location"/>
-					<Section sectionId="sponsors-section" color="#ecf0f1" text="Sponsors"/>
+          <Index color="#bdc3c7"/>
+          <Register color="#ecf0f1" />
+          <Schedule color="#bdc3c7"/>
+          <Location color="#ecf0f1"/>
+          <Sponsors color="#bdc3c7"/>
 				</div>
 			</div>
 		);

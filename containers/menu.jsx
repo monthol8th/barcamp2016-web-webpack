@@ -1,21 +1,6 @@
 import Menu from 'react-burger-menu';
 var Slide = Menu.push;
 class Menus extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			isOpen: false
-		};
-	}
-	__stateChanged(state) {
-		this.setState({isOpen: state.isOpen});
-		return state.isOpen;
-	}
-	__changeState() {
-		this.setState({
-			isOpen: !this.state.isOpen
-		});
-	}
 	render() {
 		return (
 			<div >

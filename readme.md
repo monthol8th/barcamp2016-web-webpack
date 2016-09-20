@@ -23,17 +23,17 @@
 
 ### How to add new section
 
-Your code will be written in `section.jsx` then add the component into `wrapper.jsx`
+Your code will be written in `/sections/[section_name].jsx` then add the component into `wrapper.jsx`
 
 for example
->***section.jsx***
+>***index.jsx***
 >
 >~~~~
 class Section extends React.Component {
   render() {
     return (
-      <div className="section flex flex-center" id={this.props.sectionId}>
-        <p className="text">This is main page</p>
+      <div className="section flex flex-center" id="index-section">
+        <p className="text">Index</p>
       </div>
     );
   }
@@ -47,4 +47,4 @@ Second, add your component to `wrapper.jsx`
 >~~~~
 ><Section sectionId="section3" />
 >~~~~
->I'm passing `sectionId` to my child component. (We are using `id` to link between `<a></a>` and `<Section />`)
+>I'm passing `sectionId` to my child component. (We are using `id` to link between navbar and `<Section />`)
