@@ -18,12 +18,12 @@
  `webpack-dev-server --progress --colors`
 
  open `http://localhost:8080` or `http://localhost:8080/webpack-dev-server`
- 
+
 ## Get started
 
 ### How to add new section
 
-Your code will be written in `section.jsx`, after that add your component into `wrapper.jsx`
+Your code will be written in `section.jsx` then add the component into `wrapper.jsx`
 
 for example
 >***section.jsx***
@@ -48,15 +48,3 @@ Second, add your component to `wrapper.jsx`
 ><Section sectionId="section3" />
 >~~~~
 >I'm passing `sectionId` to my child component. (We are using `id` to link between `<a></a>` and `<Section />`)
->
->
->
-
-Finally, Add new link tag `<a></a>` in `menu.jsx`
->***menu.jsx***
->
->~~~~
-><a onClick={this.__changeState.bind(this)} className="scroll" href="#section3">Section3</a>
->~~~~
->You have to only change href to be your `sectionId`
-
