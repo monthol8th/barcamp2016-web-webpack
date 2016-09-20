@@ -4,13 +4,15 @@ import '../js/anchor.js';
 export default class Wrapper extends React.Component {
 	render() {
 		return (
-			<div id="outer-container">
-				<Menu pageWrapId="page-wrap" outerContainerId="outer-container"/>
-				<main id="page-wrap">
-					<Section sectionId="section1" color="#bdc3c7" text="Section1"/>
-					<Section sectionId="section2" color="#ecf0f1" text="Section2"/>
-					<Section sectionId="section3" color="#bdc3c7" text="Section3"/>
-				</main>
+			<div>
+				<Menu />
+				<div>
+					<Section sectionId="index-section" color="#ecf0f1" text="Index"/>
+					<Section sectionId="register-section" color="#bdc3c7" text="Register"/>
+					<Section sectionId="schedule-section" color="#ecf0f1" text="Schedule"/>
+					<Section sectionId="location-section" color="#bdc3c7" text="Location"/>
+					<Section sectionId="sponsors-section" color="#ecf0f1" text="Sponsors"/>
+				</div>
 			</div>
 		);
 	}
