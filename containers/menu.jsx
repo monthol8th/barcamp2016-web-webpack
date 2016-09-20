@@ -21,7 +21,10 @@ class Menus extends React.Component {
 			<div >
 				<nav className="uk-navbar flex flex-center-x" data-uk-sticky>
 					<ul className="uk-navbar-nav uk-hidden-small">
-						<li className="uk-active">
+						<li>
+							<a className="scroll" href="#index-section">bcbk</a>
+						</li>
+						<li>
 							<a className="scroll" href="#register-section">Register</a>
 						</li>
 						<li>
