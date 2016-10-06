@@ -19,7 +19,7 @@ class Section extends React.Component {
         </div>
         <div id="location-body">
             <div className="location-item" >
-                <p>PAID PARKING</p>
+                <div className="location-innerhead"><p>PAID PARKING</p></div>
                 <div className="location-inneritem">
                     <div>
                         <p>(A) Ngam Wong Wan 1 Parking Building</p>
@@ -59,8 +59,8 @@ class Section extends React.Component {
                 </div>
             </div>
             <div className="location-item">
-                <p>FREE PARKING</p>
-                <div className="location-inneritem" >
+                <div className="location-innerhead"><p>FREE PARKING</p></div>
+                <div className="location-inneritem">
                     <div>
                         <p>(E) LH1 Parking</p>
                         <ul>
@@ -72,7 +72,8 @@ class Section extends React.Component {
                         <ul>
                             <li>Location: Opposite of Computer Engineering Building</li>
                             <li>Capacity: 40</li>
-                            </ul>
+                        </ul>
+                        <br />
                     </div>
                     <div>
                         <p>(G) Jakbandhu Building Parking</p>
@@ -84,22 +85,22 @@ class Section extends React.Component {
                         <p>Illegal or double parking may result in wheel damp and 500 THB fine imposed</p>
                     </div>
                 </div>
-                <p>TRANSPORTATION</p>
+                <div className="location-innerhead" id="location-transport"><p>TRANSPORTATION</p></div>
                 <div className="location-inneritem">
                     <div id="location-bus">
-                        <p>Bus</p>
+                        <p className="location-transport-topic">Bus</p>
                         <div><p>
                         24 26 29 39 51 52 59 63 104 107 114 126 129 177 185 186 522 524 528 545
                         </p></div>
                     </div>
                     <div>
-                        <p>Van</p>
+                        <p className="location-transport-topic">Van</p>
                         <div><p>
                         14 40 62 79
                         </p></div>
                     </div>
                     <div>
-                        <p>KU Shuttle Bus</p>
+                        <p className="location-transport-topic">KU Shuttle Bus</p>
                         <div><p>
                             1 2 4
                         </p></div>
